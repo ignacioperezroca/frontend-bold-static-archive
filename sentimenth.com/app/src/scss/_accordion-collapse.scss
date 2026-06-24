@@ -1,0 +1,73 @@
+// -------------------------
+// ACCORDION COLLAPSE
+// -------------------------
+
+#accordion {
+	> div {
+		> a{
+				i:last-child{
+			    -webkit-transform: rotate(180deg);
+			    transform: rotate(180deg);
+				}
+			&.collapsed{
+				i:last-child{
+			    -webkit-transform: rotate(0deg);
+          transform: translate(7px, 0);
+				}
+			}
+		}
+	}
+}
+.panel-group{
+	.panel {
+    border-radius: 0px;
+    border: 0px solid transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+		.panel-heading{
+	    height: 40px;
+	    color: #fff;
+      padding: 10px 10px;
+	    background-color: $primary;
+      border-top-left-radius: 0px;
+	    border-top-right-radius: 0px;
+      border-color: transparent;
+      &:hover{
+		    background-color: $tertiary;
+      }
+      img{
+        width: 25px;
+        display: inline-block;
+      }
+      .fa {
+		    font-size: 1.3em;
+		    padding: 0 10px 0 5px;
+			}
+	    h4{
+		    text-transform: uppercase;
+		    font-family: Trebuchet MS; 
+		    font-weight: 600;
+		    font-size: 14px;
+        display: inline-block;
+	    }
+	    a{
+	    	.collapsed{}
+	    	&:hover,&:focus{
+	    		color: #fff;
+	    	}
+	    }
+		}
+		.panel-collapse{
+			.panel-body{
+				ul{
+					li{
+						font-size: 12px;
+						span{
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,126 @@
+// -------------------------
+// ACCORDION
+// -------------------------
+.accordion-wrapper {
+	.container{
+		.col-xs-12{
+		  padding-left: 0px;
+		  padding-right: 0px;
+		}
+	}
+}
+#accordion{
+	.panel-body {
+    padding: 0px;
+	}
+	.panel-group .panel-heading+.panel-collapse>.panel-body {
+    border: none;
+	}
+	.panel {
+    border: none;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 17px 15px 17px 0px;
+    background-color: rgba(0,0,0,.5);
+    // background-color: rgba(7,131,235,0.4);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+		.panel-heading {
+	    padding: 0px 0px;
+	    background-color: transparent;
+	    h4{
+	      color: #fff;
+	    	margin-bottom: 0;
+	    	font-family: $primary-Bk;
+	    	font-size: 13px;
+	    	span:nth-child(3){
+	    		text-transform: uppercase;
+	    		font-size: 12px;
+  		    margin-left: 40px;
+		    	font-family: $primary-Md;
+	    	}
+	    	span:nth-child(5){
+		    	font-family: $primary-Bd;
+		    	float: right;
+		    	margin-right: 10px;
+		    	color: #00c1ff;
+	    	}
+    		.fa-play-circle-o {
+    			opacity: 1;
+    			font-size: 2.2em;
+			    position: absolute;
+			    top: 12px;
+	        left: 10px;
+				}
+    		.fa-stop-circle-o {
+    			opacity: 0;
+    			font-size: 2.2em;
+			    position: absolute;
+			    top: 12px;
+	        left: 10px;
+				}
+    		.fa-arrow-down {
+		    	color: #00c1ff;
+			    float: right;
+				}
+				input[type="range"]{
+					width: 100%;
+				}
+	    }
+	    &[aria-expanded="true"]{
+				h4{
+	    		.fa-play-circle-o {
+	    			opacity: 0;
+				    // top: -45px;
+		        // left: 15px;
+						-ms-transform: rotate(180deg);
+						-webkit-transform: rotate(180deg);
+						transform: rotate(180deg);
+					}
+	    		.fa-stop-circle-o {
+	    			opacity: 1;
+				    // top: 12px;
+		        // left: 14px;
+					}
+					.fa-arrow-down {
+						-ms-transform: rotate(180deg);
+						-webkit-transform: rotate(180deg);
+						transform: rotate(180deg);
+					}
+				}	    	
+	    }
+		}
+		a, a:hover, a:focus, a:visited, 
+		li:hover, li:focus, li:visited, 
+		button:hover, button:focus, button:visited{
+			color: #fff;
+		}
+		.panel-collapse{
+			.panel-body{
+				border: none;
+				.btn{
+					&:hover{
+						background-color: $tertiary;
+						color: #fff !important;
+					}
+				}
+			}
+		}
+	}
+}
+.panel-group .panel + .panel {
+    margin-top: 2px;
+}
+
+// RESPONSIVE
+@media (min-width: 768px){
+	.accordion-wrapper {
+	  margin-left: 0px;
+	  margin-right: 0px;
+	}
+}

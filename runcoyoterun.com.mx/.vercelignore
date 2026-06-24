@@ -1,0 +1,9 @@
+node_modules
+app
+.git
+.DS_Store
+_materiales
+notes.js
+package-lock.json
+pnpm-lock.yaml
+yarn.lock

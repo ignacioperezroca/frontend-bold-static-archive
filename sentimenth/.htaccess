@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule informe-macri$ informe-macri.php?%{QUERY_STRING} [NC,L]

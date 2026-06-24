@@ -1,0 +1,71 @@
+
+// -------------------------
+// MIXINS
+// -------------------------
+
+// Mixins shortcuts
+@mixin transition-delay($delay) {
+  -webkit-transition-delay: $delay;
+     -moz-transition-delay: $delay;
+      -ms-transition-delay: $delay;
+          transition-delay: $delay;
+}
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+          transform: $transform;
+}
+@mixin background-size($background-size) {
+  -webkit-background-size: $background-size;
+     -moz-background-size: $background-size;
+      -ms-background-size: $background-size;
+          background-size: $background-size;
+}
+
+// Animations CSS3
+@mixin animation($name, $duration, $ease, $delay, $direction) {
+  -webkit-animation: $name $duration $ease $delay $direction;
+  -moz-animation: $name $duration $ease $delay $direction;
+  -o-animation: $name $duration $ease $delay $direction;
+  -ms-animation: $name $duration $ease $delay $direction;
+  animation: $name $duration $ease $delay $direction;
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-o-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+
+.anm-fadeout{
+  @include animation(fadeout, 2s, ease-in-out, 1s, forwards);
+}
+
+@include keyframes(fadeout) {
+  0% {display: block; opacity: 1;}
+  25% {opacity: .75;}
+  50% {opacity: .50;}
+  75% {opacity: .25;}
+  99% {opacity: .01;}
+  100% {opacity: 0; width: 0; height: 0;}
+}
+
+
+
+@include background-size(cover);
+@include transform(translate(-50%, -50%));
+
+%icon {
+  transition: background-color ease .2s;
+  margin: 0 .5em;
+}
+.block-icon {
+  @extend %icon;
+  /* block specific styles... */
+}
+.info-icon {
+  @extend %icon;
+  /* info specific styles... */
+}

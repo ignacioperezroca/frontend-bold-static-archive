@@ -1,0 +1,25 @@
+
+/*TRANSITIONS*/
+#navbar li{
+  @include transition(all 0.2s ease-out);
+}
+li, a, button, .icon-bar,
+.ease-out--03,
+.btn, .title, .icon-block i, .social-icon--block, .container-img--hover {
+  @include transition(all 0.3s ease-out);
+}
+.black-block, .close-map, .maps-container, .location-data, .media-desc, .youtube-media, .close-button i, .modal-in, .angle-button i,
+.developed-thet img, .developed-thet p, .effect-container, .cover, .cd, .dvd, .center-container, .duration{
+	// Default transition set by viariable
+  @include transition;
+}
+.modal {
+  @include transition(all 0.4s ease-out);
+}
+.cd-img, .dvd-img {
+  @include transition(all 0.6s ease-out);
+}
+input, textarea{
+  @include transition(all 1s ease-out !important);
+}
+

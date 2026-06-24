@@ -1,0 +1,130 @@
+
+/*FORM*/
+
+// FORM CONSTRUCTION
+
+input:focus, textarea:focus{
+  border-bottom: 1px solid $primary !important;
+}
+#contactForm{
+  .text-danger, .help-block {
+    color: $primary;
+  }
+  .help-block {
+    position: absolute;
+    width: 250px;
+    text-align: right;
+    right: 0;
+    bottom: 0px;
+    z-index: 11;
+    margin: 0;
+    ul{
+      padding: 6px;
+    }
+  }  
+  .alert-success, .alert-danger {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    left: 0;
+    bottom: 0px;
+    z-index: 11;
+    margin: 0;
+    color: #ff5c5c;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 0;
+    padding: 5px 23px 2px;
+    margin-bottom: 30px;
+  }
+  .alert-danger {
+    width: 100%;
+  }
+  button.close {
+    opacity: 1;
+  }
+}
+
+#contactForm {
+  margin-top: 20px;
+  .form-group{
+    margin-bottom: 30px;
+    button.btn.btn-primary.btn-lg{
+      float: right;
+      padding: 12px 20px 9px;
+      background-color: $primary;
+    }
+  }
+  .form-control {
+    // background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+  }
+  input:focus{
+
+  }
+  /* Change Autocomplete styles in Chrome*/
+  // color of form -->
+  input{color: #404040; font-family: $primary-Bd; padding: 11px 12px 5px;} select{color: #404040; font-family: $primary-Bd; option{color: #555 } } textarea{color: #404040; font-family: $primary-Bd; resize: none; min-height: 115px;}
+  ::-webkit-input-placeholder {color: #656565; font-family: $primary-Bk; } :-moz-placeholder { /* Firefox 18- */ color: #656565; font-family: $primary-Bk; } ::-moz-placeholder {  /* Firefox 19+ */ color: #656565; font-family: $primary-Bk; } :-ms-input-placeholder {color: #656565; font-family: $primary-Bk; }
+  input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus input:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+    border: 1px solid transparent;
+    // color of autofill -->
+    -webkit-text-fill-color: #404040;
+    // background color of autofill -->
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    background-color: transparent !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+.form-control{border: 1px solid #ddd; &:focus{border-color: #909090; } &:hover{border-color: #ccc; } }
+.search-form{
+  padding: 7px 8px 8px;
+	input{
+    height: 35px;
+    width: 100%;
+    padding: 0px 15px;
+    font-size: 16px;
+    border: none;
+    background: #eee;
+    color: #404040;
+	}
+}
+.subscribe-form{
+  > a{
+    position: absolute;
+    top: 2px;
+    right: 35px;
+    z-index: 9999;
+    i{
+      font-size: 1.5em;
+      &:hover{
+        color: #000;
+      }
+    }
+  }
+  &:hover{
+    .fa.fa-square {
+      color: #ccc;
+    }
+  }
+}
+
+// FORM RESPONSIVE
+//////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 768px){
+  #contactForm {
+    margin-top: 35px;
+  }
+}
+
+
+
+

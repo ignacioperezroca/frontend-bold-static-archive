@@ -1,0 +1,43 @@
+// -------------------------
+// BUTTONS
+// -------------------------
+
+.btn{
+  font-size: 12px;
+  border: none;
+  font-family: $primary-Bd;
+  border-radius: initial;
+  text-transform: uppercase;
+}
+.btn-primary {
+  color: #fff;
+  background-color: $thet-primary;
+  &:hover, &:focus, &:active{
+    color: #fff;
+    background-color: #121212 !important;
+  }
+}
+.btn-secondary{
+  font-size: 15px;
+  font-family: $primary-Md;
+  color: #fff;
+  background-color: #B473B2;
+  border-color: #B473B2;
+}
+.btn-subscription {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  height: 28px;
+  width: 100px;
+  margin: -14px 0 0 -50px;
+  border-radius: initial;
+}
+.btn-block{    
+  font-family: $primary-Bd;
+  font-size: 16px;
+  padding: 16px 0px;
+}
+.btn-block-sm{
+  padding: 6px 60px;
+}

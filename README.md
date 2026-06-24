@@ -1,15 +1,20 @@
-# Frontend Bold Static Archive
+# frontend-bold-static-archive
 
-Curated archive for static banner and creative exports.
+Curated archive for the standalone static campaign sites from the Frontend BOLD workspace.
+
+## Included
+
+- `runcoyoterun.com.mx`
+- `sentimenth.com`
+- `sentimenth`
 
 ## Purpose
-- Preserve legacy creative work in a maintainable GitHub repository.
-- Provide a stable home for banner folders, exports, and reference material.
+
+- Preserve the original source, artwork, and publication assets.
+- Keep large source files in Git LFS where required.
+- Exclude reproducible caches, OS metadata, and dependencies.
 
 ## Structure
-- `docs/` for inventory and maintenance notes
-- Creative folders and banner exports can be added under clear category folders
 
-## Status
-- Empty repository scaffolded for future archive imports
-- Ready for maintainable static content and documentation
+- `MANIFEST.md` documents the archive contents.
+- Each site keeps its original nested structure for traceability.
